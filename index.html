@@ -128,13 +128,15 @@
 <li>Formatting provided by <a href="https://pypi.org/project/isort/">isort</a>, <a href="https://pypi.org/project/pipenv-setup/">pipenv-setup</a>, <a href="https://pypi.org/project/black/">black</a> [checked by GitHub Actions]</li>
 <li>Analizing complexity and maintainability provided by <a href="https://radon.readthedocs.io/en/latest/">radon</a>, <a href="https://pypi.org/project/xenon/">xenon</a> [checked by GitHub Actions]</li>
 <li>All development tasks (lint, format, analize, test, etc) excluding deployment wrapped up in a python CLI by <a href="http://www.pyinvoke.org/">invoke</a></li>
-<li>Omit documentation workflows
+<li>
+<p>Omit documentation workflows
   since this project targets early stages of development.
   In the early stages of development it is better to focus on providing
   working software and writing README.md than providing comprehensive
-  documentation.</li>
-</ul>
+  documentation.</p>
 <p>@see <a href="https://agilemanifesto.org/iso/en/manifesto.html">Manifesto for Agile Software Development</a></p>
+</li>
+</ul>
 <h2 id="quickstart">Quickstart<a class="headerlink" href="#quickstart" title="Permanent link">&para;</a></h2>
 <p>1.</p>
 <p>Install the latest Cookiecutter if you haven't installed it yet (this requires
@@ -155,9 +157,11 @@ for detail of templated values, see the <a href="docs/prompts.md">Prompts</a>.</
 Review support range if the one of your package is not Python 3.5 - 3.8</p>
 <ul>
 <li>.github/workflows/test.yml</li>
-<li>setup.py</li>
+<li>setup.py<ul>
 <li>python_requires</li>
 <li>classifiers</li>
+</ul>
+</li>
 <li>docs/CONTRIBUTING.md -&gt; Get Started! -&gt; 5. oldest Python version</li>
 </ul>
 <p>2.</p>
@@ -167,7 +171,9 @@ if you prefer stability of deployment task.</p>
 <p>1.</p>
 <p>Commit and push to GitHub repository.</p>
 <p>2.</p>
-<p>Activate your created repository on <a href="https://codeclimate.com/">Code Climate</a> and copy and paste badge.</p>
+<p>Activate your created repository on <a href="https://codeclimate.com/">Code Climate</a>.</p>
+<p>If you prefer, Enable [Pull request comments] and [Pull request status updates] from [Repo Settings] -&gt; [GitHub]</p>
+<p>Copy and paste badge from [Repo Settings] -&gt; [Badges] to this README file.</p>
 <p>2-1.</p>
 <p>Copy "TEST REPORTER ID" from [Test Coverages]</p>
 <p>2-2.</p>
@@ -190,7 +196,6 @@ as name <code>pypi_password</code></p>
 to deploy into <a href="https://pypi.python.org/pypi">PyPI</a>.</p>
 <p>Then, get your code on! 😎
 Add your package dependencies to your pipenv with <code>pipenv install</code>.</p>
-<p>For more details, see the <a href="https://briggysmalls.github.io/cookiecutter-pypackage/tutorial.html">cookiecutter-pypackage tutorial</a>.</p>
               
             </div>
           </div>
@@ -244,5 +249,5 @@ Add your package dependencies to your pipenv with <code>pipenv install</code>.</
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2020-06-02 08:36:40.449861+00:00
+Build Date UTC : 2020-06-02 13:37:02.643777+00:00
 -->
