@@ -121,9 +121,8 @@ add a file 'cli.py' in the project_slug subdirectory. An entry point is added to
 setup.py that points to the main function in cli.py.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>To use the console script in development:</p>
-<pre><code class="console">pip install -e projectdir
+<pre><code class="language-console">pip install -e projectdir
 </code></pre>
-
 <p>'projectdir' should be the top level project directory with the setup.py file</p>
 <p>The script will be generated with output for no arguments and --help.</p>
 <dl>
@@ -132,15 +131,13 @@ setup.py that points to the main function in cli.py.</p>
 </dl>
 <h2 id="known-issues">Known Issues<a class="headerlink" href="#known-issues" title="Permanent link">&para;</a></h2>
 <p>Using Click, installing the project in a development environment using:</p>
-<pre><code class="console">python setup.py develop
+<pre><code class="language-console">python setup.py develop
 </code></pre>
-
 <p>will not set up the entry point correctly. This is a known issue with Click.
 The following will work as expected:</p>
-<pre><code class="console">python setup.py install
+<pre><code class="language-console">python setup.py install
 pip install mypackage
 </code></pre>
-
 <p>With 'mypackage' adjusted to the specific project.</p>
 <h2 id="more-details">More Details<a class="headerlink" href="#more-details" title="Permanent link">&para;</a></h2>
 <p>You can read more about Click at:
