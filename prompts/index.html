@@ -1,113 +1,96 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Prompts - Cookiecutter PyPackage</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
-
-  <link rel="stylesheet" href="../css/theme.css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Prompts";
-    var mkdocs_page_input_path = "prompts.md";
-    var mkdocs_page_url = null;
-  </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Prompts - Cookiecutter PyPackage</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Prompts";
+        var mkdocs_page_input_path = "prompts.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
 
   <div class="wy-grid-for-nav">
-
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Cookiecutter PyPackage</a>
-        <div role="search">
+          <a href=".." class="icon icon-home"> Cookiecutter PyPackage
+        </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
-                    </li>
-                </ul>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Prompts</a>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Prompts</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#templated-values">Templated Values</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#options">Options</a>
     </li>
     </ul>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../console_script_setup/">Console Script Setup</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../invoke/">Invoke</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../pypi_release_checklist/">PyPI Release Checklist</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../CONTRIBUTING/">Contributing</a>
-                    </li>
-                </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../console_script_setup/">Console Script Setup</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../invoke/">Invoke</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../pypi_release_checklist/">PyPI Release Checklist</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../CONTRIBUTING/">Contributing</a>
+                </li>
+              </ul>
       </div>
     </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Cookiecutter PyPackage</a>
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Cookiecutter PyPackage</a>
+        
       </nav>
-
-      
       <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
-    
-    <li>Prompts</li>
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Prompts</li>
     <li class="wy-breadcrumbs-aside">
-      
     </li>
   </ul>
-  
   <hr/>
 </div>
-          <div role="main">
-            <div class="section">
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
               
                 <h1 id="prompts">Prompts<a class="headerlink" href="#prompts" title="Permanent link">&para;</a></h1>
 <p>When you create a package, you are prompted to enter these values.</p>
@@ -121,28 +104,20 @@
 <dt><strong>github_username</strong></dt>
 <dd>Your GitHub username.</dd>
 <dt><strong>project_name</strong></dt>
-<dd>
-<p>The name of your new Python package project.</p>
-<p>This is used in documentation,
-so spaces and any characters are fine here.</p>
+<dd>The name of your new Python package project.<p>This is used in documentation,
+  so spaces and any characters are fine here.</p>
 </dd>
 <dt><strong>github_repository_name</strong></dt>
-<dd>
-<p>The name of GitHub repository to push generated project.</p>
-<p>GitHub repository often seems to be named with "-".</p>
+<dd>The name of GitHub repository to push generated project.<p>GitHub repository often seems to be named with "-".</p>
 </dd>
 <dt><strong>project_slug</strong></dt>
-<dd>
-<p>The namespace of your Python package.</p>
-<p>This should be Python import-friendly.
-Typically, it is the slugified version of projectname.
-It seems to be better to aboid to use "-" nor "_".</p>
-<ul>
-<li><a href="https://www.python.org/dev/peps/pep-0008/#package-and-module-names">PEP 8 -- Style Guide for Python Code | Python.org</a></li>
-<li><a href="https://www.python.org/dev/peps/pep-0423/#follow-pep-8-for-syntax-of-package-and-module-names">PEP 423 -- Naming conventions and recipes related to packaging | Python.org</a></li>
-<li><a href="https://www.python.org/dev/peps/pep-0423/#use-a-single-name">PEP 423 -- Naming conventions and recipes related to packaging | Python.org</a></li>
-<li><a href="https://stackoverflow.com/questions/761519/is-it-ok-to-use-dashes-in-python-files-when-trying-to-import-them">naming - Is it ok to use dashes in Python files when trying to import them? - Stack Overflow</a></li>
-</ul>
+<dd>The namespace of your Python package.<p>This should be Python import-friendly.
+  Typically, it is the slugified version of projectname.
+  It seems to be better to aboid to use "-" nor "_".</p>
+<p>- <a href="https://www.python.org/dev/peps/pep-0008/#package-and-module-names">PEP 8 -- Style Guide for Python Code | Python.org</a>
+  - <a href="https://www.python.org/dev/peps/pep-0423/#follow-pep-8-for-syntax-of-package-and-module-names">PEP 423 -- Naming conventions and recipes related to packaging | Python.org</a>
+  - <a href="https://www.python.org/dev/peps/pep-0423/#use-a-single-name">PEP 423 -- Naming conventions and recipes related to packaging | Python.org</a>
+  - <a href="https://stackoverflow.com/questions/761519/is-it-ok-to-use-dashes-in-python-files-when-trying-to-import-them">naming - Is it ok to use dashes in Python files when trying to import them? - Stack Overflow</a></p>
 </dd>
 <dt><strong>project_short_description</strong></dt>
 <dd>A 1-sentence description of what your Python package does.</dd>
@@ -153,29 +128,21 @@ It seems to be better to aboid to use "-" nor "_".</p>
 <p>The following package configuration options set up different features for your project.</p>
 <dl>
 <dt><strong>use_pytest</strong></dt>
-<dd>
-<p>Wheter use pytest for testing or not.</p>
-<p>When not "y", progect will be generated to use unittest for testing.</p>
+<dd>Wheter use pytest for testing or not.<p>When not "y", progect will be generated to use unittest for testing.</p>
 </dd>
 <dt><strong>use_pypi_deployment_with_github_actions</strong></dt>
 <dd>Whether use PyPI deployment with GitHub Actions.</dd>
 <dt><strong>use_pyup</strong></dt>
-<dd>
-<p>Whether use <a href="https://pyup.io/">pyup.io</a> to keep Python dependencies secure, up-to-date, and compliant.</p>
-<p><a href="https://pyup.io/">pyup.io</a> is a service that helps you to keep your requirements files up to date.
-It sends you automated pull requests
-whenever there's a new release for one of your dependencies.</p>
+<dd>Whether use <a href="https://pyup.io/">pyup.io</a> to keep Python dependencies secure, up-to-date, and compliant.<p><a href="https://pyup.io/">pyup.io</a> is a service that helps you to keep your requirements files up to date.
+  It sends you automated pull requests
+  whenever there's a new release for one of your dependencies.</p>
 </dd>
 <dt><strong>command_line_interface</strong></dt>
-<dd>
-<p>Whether to create a console script and witch package use for.</p>
-<p>Console script entry point will match the project_slug.</p>
+<dd>Whether to create a console script and witch package use for.<p>Console script entry point will match the project_slug.</p>
 </dd>
 <dt><strong>open_source_license</strong></dt>
-<dd>
-<p>Note that "GPL-3.0-or-later-short" and "Apache-2.0-short" is not recognized by GitHub.</p>
-<p>If you are stranger around license, linked workflow will be your helps.
-<a href="Choose an open source license | Choose a License">Choose an open source license | Choose a License</a></p>
+<dd>Note that "GPL-3.0-or-later-short" and "Apache-2.0-short" is not recognized by GitHub.<p>If you are stranger around license, linked workflow will be your helps.
+  <a href="Choose an open source license | Choose a License">Choose an open source license | Choose a License</a></p>
 </dd>
 <dt><strong>python_code_max_length_per_line</strong></dt>
 <dd>Max length per line of Python code.</dd>
@@ -183,38 +150,28 @@ whenever there's a new release for one of your dependencies.</p>
 <p>This value will be set configure files for each linter and formater.</p>
 <dl>
 <dt><strong>pylint_docstring_min_length</strong></dt>
-<dd>
-<p>Minimum line length for functions/classes that require docstrings, shorter ones are exempt.</p>
-<p>In the early stages of development
-it is better to focus on providing working software
-and writing README.md than providing comprehensive documentation.</p>
+<dd>Minimum line length for functions/classes that require docstrings, shorter ones are exempt.<p>In the early stages of development
+  it is better to focus on providing working software
+  and writing README.md than providing comprehensive documentation.</p>
 </dd>
 </dl>
               
             </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../console_script_setup/" class="btn btn-neutral float-right" title="Console Script Setup">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-    
   </div>
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
+          
         </div>
       </div>
 
@@ -222,24 +179,26 @@ and writing README.md than providing comprehensive documentation.</p>
 
   </div>
 
-  <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../console_script_setup/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../console_script_setup/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
 </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>
