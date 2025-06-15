@@ -106,9 +106,9 @@
 <p>This template focus following:</p>
 <ul>
 <li>Target Python version: 3.7 - 3.12</li>
-<li>Dependency tracking using <a href="https://pipenv.pypa.io/en/latest/">Pipenv</a></li>
+<li>Dependency tracking using <a href="https://pypi.org/project/uv/">uv</a></li>
 <li>Linting provided by both <a href="https://www.pylint.org/">pylint</a>, <a href="https://pypi.org/project/flake8/">flake8</a>, <a href="http://mypy-lang.org/">mypy</a> [executed by GitHub Actions]</li>
-<li>Formatting provided by <a href="https://pypi.org/project/isort/">isort</a>, <a href="https://pypi.org/project/pipenv-setup/">pipenv-setup</a>, <a href="https://pypi.org/project/black/">black</a> [checked by GitHub Actions]</li>
+<li>Formatting provided by <a href="https://pypi.org/project/docformatter/">Ruff</a> [checked by GitHub Actions]</li>
 <li>Analyzing complexity and maintainability provided by <a href="https://radon.readthedocs.io/en/latest/">radon</a>, <a href="https://pypi.org/project/xenon/">xenon</a> [checked by GitHub Actions]</li>
 <li>All development tasks (lint, format, analyze, test, etc) excluding deployment wrapped up in a python CLI by <a href="http://www.pyinvoke.org/">invoke</a></li>
 <li>
@@ -146,7 +146,7 @@ Review support range if the one of your package is not Python 3.7 - 3.11</p>
 <li>docs/CONTRIBUTING.md -&gt; Get Started! -&gt; 5. oldest Python version</li>
 </ul>
 <p>2.</p>
-<p>Pin wheel version in Pipfile and execute <code>pipenv lock</code>
+<p>Pin wheel version in <code>pyproject.toml</code> and execute <code>uv lock</code>
 if you prefer stability of deployment task.</p>
 <h2 id="remaining-task-after-creating-initialized-project-directory">Remaining task after creating initialized project directory<a class="headerlink" href="#remaining-task-after-creating-initialized-project-directory" title="Permanent link">&para;</a></h2>
 <p>1.</p>
@@ -161,22 +161,13 @@ if you prefer stability of deployment task.</p>
 <p>register copied TEST REPORTER ID into secret in your pushed GitHub repository
 as name "CC_TEST_REPORTER_ID".</p>
 <p>3.</p>
-<p>Activate your created repository on <a href="https://pyup.io/">pyup.io</a>.</p>
-<p>Create a new account at <a href="https://pyup.io/">pyup.io</a> or log into your existing account.</p>
-<p>Click on the green <code>Add Repo</code> button in the top left corner
-and select repository you created in Step 1.
-A popup will ask you whether you want to pin your dependencies.
-Click on <code>Pin</code> to add the repo.</p>
-<p>Once your repo is set up correctly,
-the pyup.io badge will show your current update status.</p>
-<p>4.</p>
 <p>Issue API token at <a href="https://pypi.python.org/pypi">PyPI</a> and register into secret of your GitHub repository
 as name <code>pypi_password</code></p>
-<p>5.</p>
+<p>4.</p>
 <p>Create tag <code>v[0-9]+.[0-9]+.[0-9]+</code> and push to GitHub repository
 to deploy into <a href="https://pypi.python.org/pypi">PyPI</a>.</p>
 <p>Then, get your code on! 😎
-Add your package dependencies to your pipenv with <code>pipenv install</code>.</p>
+Add your package dependencies to your <code>pyproject.toml</code> with <code>uv install</code>.</p>
               
             </div>
           </div><footer>
@@ -225,5 +216,5 @@ Add your package dependencies to your pipenv with <code>pipenv install</code>.</
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-06-15 06:52:12.629282+00:00
+Build Date UTC : 2025-06-15 23:39:29.733061+00:00
 -->
