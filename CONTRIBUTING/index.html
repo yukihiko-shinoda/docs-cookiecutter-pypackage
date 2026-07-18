@@ -148,20 +148,18 @@ or even on the web in blog posts, articles, and such.</p>
 
 <p>Ready to contribute?
 Here's how to set up <code>cookiecutter-pypackage</code> for local development.
-Please note this documentation assumes you already have <a href="https://virtualenv.pypa.io/en/stable/installation">virtualenv</a> and <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git</a> installed and ready to go.</p>
+Please note this documentation assumes you already have <a href="https://docs.astral.sh/uv/getting-started/installation/">uv</a> and <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git</a> installed and ready to go.</p>
 <p>1. Fork the <code>cookiecutter-pypackage</code> repo on GitHub.</p>
 <p>2. Clone your fork locally:</p>
 <pre><code class="language-console">cd path_for_the_repo
 git clone git@github.com:YOUR_NAME/cookiecutter-pypackage.git
 </code></pre>
-<p>3. Assuming you have virtualenv installed
-   (If you have Python3.5 this should already be there),
-   you can create a new environment for your local development by typing:</p>
-<pre><code class="language-console">virtualenv cookiecutter-pypackage-env
-source cookiecutter-pypackage-env/bin/activate
-</code></pre>
-<p>This should change the shell to look something like:</p>
-<pre><code class="language-console">(cookiecutter-pypackage-env) $
+<p>3. Set up your development environment.</p>
+<p>The recommended way is to use <a href="https://github.com/yukihiko-shinoda/docker-compose-python-development">docker-compose-python-development</a>,
+   which provides a pre-configured Docker-based environment for Python projects.
+   Follow the setup instructions in that repository, then clone this repo into its workspace.</p>
+<p>Alternatively, install dependencies directly with <code>uv</code>:</p>
+<pre><code class="language-console">uv sync
 </code></pre>
 <p>4. Create a branch for local development:</p>
 <pre><code class="language-console">git checkout -b name-of-your-bugfix-or-feature
